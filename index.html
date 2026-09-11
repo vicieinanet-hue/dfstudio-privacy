@@ -531,7 +531,7 @@
             <li>
                 <strong>Login Google opcional:</strong>
                 quando utilizado, o Google pode fornecer ao aplicativo informações
-                básicas da conta, como identificador, nome e e-mail. O DF Studio Pro
+                básicas da conta: identificador, nome, endereço de e-mail e foto de perfil. O DF Studio Pro
                 não mantém conta própria em servidor e <span class="highlight">nunca tem
                 acesso à sua senha do Google</span>.
             </li>
@@ -614,8 +614,9 @@
                 <strong>Google Play Billing:</strong> compras, assinaturas e restauração de acesso;
             </li>
             <li>
-                <strong>Google Sign-In (Play Services Auth):</strong> autenticação opcional
-                e autorização do backup no seu Drive.
+                <strong>Google Sign-In (Play Services Auth):</strong> autenticação opcional.
+                A permissão de acesso ao Drive <span class="highlight">não vem junto do login</span>:
+                é pedida à parte, no momento em que você usa o backup.
             </li>
         </ul>
  
@@ -668,17 +669,17 @@
             </div>
             <div class="permission-item">
                 <span class="perm-name">🌐 INTERNET E REDE</span>
-                <span class="perm-desc">Google Play, login, controle remoto local e busca de cifras</span>
+                <span class="perm-desc">Google Play, login opcional, backup no seu Drive e controle remoto na rede local</span>
                 <span class="perm-code">INTERNET · ACCESS_NETWORK_STATE · ACCESS_WIFI_STATE</span>
             </div>
             <div class="permission-item">
                 <span class="perm-name">🔊 SERVIÇO DE ÁUDIO</span>
-                <span class="perm-desc">Mantém o som ativo e a tela acordada durante o show</span>
+                <span class="perm-desc">Mantém o processamento de áudio ativo durante o show, mesmo com a tela apagada. Não acende nem mantém a tela ligada.</span>
                 <span class="perm-code">FOREGROUND_SERVICE · FOREGROUND_SERVICE_MEDIA_PLAYBACK · WAKE_LOCK</span>
             </div>
             <div class="permission-item">
                 <span class="perm-name">📳 VIBRAÇÃO</span>
-                <span class="perm-desc">Resposta tátil do metrônomo e dos controles</span>
+                <span class="perm-desc">Toque curto de resposta ao usar os controles do mixer e da tela do cantor</span>
                 <span class="perm-code">VIBRATE</span>
             </div>
         </div>
